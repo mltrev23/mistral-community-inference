@@ -1,4 +1,4 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer 
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "mistral-community/Mixtral-8x22B-v0.1"
 tokenizer = AutoTokenizer.from_pretrained(model_id, use_flash_attention_2=True)
