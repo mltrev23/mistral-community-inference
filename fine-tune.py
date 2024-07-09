@@ -5,7 +5,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_id, use_flash_attention_2=True)
 
 model = AutoModelForCausalLM.from_pretrained(model_id)
 
-unlabeled_texts = []
+unlabeled_texts = [] 
 with open('bittensor.txt', 'r') as f:
     for sentence in f.read().splitlines():
         unlabeled_texts.append(sentence)
